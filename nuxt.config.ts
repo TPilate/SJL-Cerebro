@@ -6,5 +6,10 @@ export default defineNuxtConfig({
     mongoUri: process.env.MONGODB_URI
   },
   modules: ['@nuxt/ui'],
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+  ui: {
+    theme: {
+      colors: ['red']
+    }
+  }
 })
