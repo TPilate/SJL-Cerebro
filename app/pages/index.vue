@@ -13,19 +13,19 @@
             </div>
             <nav class="hidden md:flex items-center gap-6">
               <UButton variant="ghost" color="gray" class="text-[var(--foreground)]">
-                <Icon name="i-heroicons-chart-bar" class="mr-2" />
+                <span class="mr-2">📊</span>
                 Dashboard
               </UButton>
               <UButton variant="ghost" color="gray" class="text-[var(--muted-foreground)]">
-                <Icon name="i-heroicons-users" class="mr-2" />
+                <span class="mr-2">👥</span>
                 Players
               </UButton>
               <UButton variant="ghost" color="gray" class="text-[var(--muted-foreground)]">
-                <Icon name="i-heroicons-calendar" class="mr-2" />
+                <span class="mr-2">📅</span>
                 Trainings
               </UButton>
               <UButton variant="ghost" color="gray" class="text-[var(--muted-foreground)]">
-                <Icon name="i-heroicons-trophy" class="mr-2" />
+                <span class="mr-2">🏆</span>
                 Tournaments
               </UButton>
             </nav>
@@ -56,8 +56,8 @@
               <p class="text-3xl font-bold text-[var(--foreground)] mb-1">8</p>
               <p class="text-sm text-[var(--muted-foreground)]">2 Gold, 4 Silver, 2 Bronze</p>
             </div>
-            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
-              <Icon name="i-heroicons-users" class="h-6 w-6 text-red-600" />
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 text-2xl">
+              👥
             </div>
           </div>
         </UCard>
@@ -70,8 +70,8 @@
               <p class="text-3xl font-bold text-[var(--foreground)] mb-1">6.6</p>
               <p class="text-sm text-[var(--muted-foreground)]">Team overall rating</p>
             </div>
-            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
-              <Icon name="i-heroicons-arrow-trending-up" class="h-6 w-6 text-red-600" />
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 text-2xl">
+              📈
             </div>
           </div>
         </UCard>
@@ -84,8 +84,8 @@
               <p class="text-3xl font-bold text-[var(--foreground)] mb-1">2</p>
               <p class="text-sm text-[var(--muted-foreground)]">Last 7 days</p>
             </div>
-            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
-              <Icon name="i-heroicons-calendar" class="h-6 w-6 text-red-600" />
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 text-2xl">
+              📅
             </div>
           </div>
         </UCard>
@@ -98,8 +98,8 @@
               <p class="text-3xl font-bold text-[var(--foreground)] mb-1">5 days</p>
               <p class="text-sm text-[var(--muted-foreground)]">Current training streak</p>
             </div>
-            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
-              <Icon name="i-heroicons-fire" class="h-6 w-6 text-red-600" />
+            <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-red-50 text-2xl">
+              🔥
             </div>
           </div>
         </UCard>
@@ -117,7 +117,7 @@
                   <p class="text-sm text-[var(--muted-foreground)]">8 of 8 players</p>
                 </div>
                 <UButton color="red" class="bg-red-600 hover:bg-red-700">
-                  <Icon name="i-heroicons-plus" class="mr-1" />
+                  <span class="mr-1">➕</span>
                   Add Player
                 </UButton>
               </div>
@@ -128,8 +128,7 @@
               <div class="flex flex-col sm:flex-row gap-4">
                 <div class="flex-1">
                   <UInput
-                    icon="i-heroicons-magnifying-glass"
-                    placeholder="Search players..."
+                    placeholder="🔍 Search players..."
                     class="w-full"
                   />
                 </div>
@@ -170,7 +169,7 @@
                       </p>
                     </div>
                   </div>
-                  <UButton variant="ghost" color="gray" icon="i-heroicons-ellipsis-vertical" size="sm" />
+                  <UButton variant="ghost" color="gray" size="sm">⋮</UButton>
                 </div>
 
                 <!-- Skills -->
@@ -207,12 +206,10 @@
                 <!-- Footer -->
                 <div class="flex items-center gap-4 text-xs text-[var(--muted-foreground)]">
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-calendar" class="h-3 w-3" />
-                    52 trainings
+                    📅 52 trainings
                   </span>
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-fire" class="h-3 w-3" />
-                    5 day streak
+                    🔥 5 day streak
                   </span>
                 </div>
               </div>
@@ -234,7 +231,7 @@
                       </p>
                     </div>
                   </div>
-                  <UButton variant="ghost" color="gray" icon="i-heroicons-ellipsis-vertical" size="sm" />
+                  <UButton variant="ghost" color="gray" size="sm">⋮</UButton>
                 </div>
 
                 <!-- Skills -->
@@ -271,12 +268,10 @@
                 <!-- Footer -->
                 <div class="flex items-center gap-4 text-xs text-[var(--muted-foreground)]">
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-calendar" class="h-3 w-3" />
-                    38 trainings
+                    📅 38 trainings
                   </span>
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-fire" class="h-3 w-3" />
-                    3 day streak
+                    🔥 3 day streak
                   </span>
                 </div>
               </div>
@@ -295,8 +290,8 @@
               <!-- Activity 1 -->
               <div class="border-l-2 border-red-600 pl-4">
                 <div class="flex items-start gap-3 mb-2">
-                  <div class="flex h-8 w-8 items-center justify-center rounded bg-red-50">
-                    <Icon name="i-heroicons-calendar" class="h-4 w-4 text-red-600" />
+                  <div class="flex h-8 w-8 items-center justify-center rounded bg-red-50 text-lg">
+                    📅
                   </div>
                   <div class="flex-1">
                     <h4 class="font-semibold text-[var(--foreground)] text-sm">Training Session</h4>
@@ -310,12 +305,10 @@
                 </div>
                 <div class="flex items-center gap-3 text-xs text-[var(--muted-foreground)] mb-2">
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-users" class="h-3 w-3" />
-                    5 players
+                    👥 5 players
                   </span>
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-clock" class="h-3 w-3" />
-                    120 min
+                    ⏱️ 120 min
                   </span>
                 </div>
                 <p class="text-xs text-[var(--muted-foreground)]">
@@ -326,8 +319,8 @@
               <!-- Activity 2 -->
               <div class="border-l-2 border-red-600 pl-4">
                 <div class="flex items-start gap-3 mb-2">
-                  <div class="flex h-8 w-8 items-center justify-center rounded bg-red-50">
-                    <Icon name="i-heroicons-calendar" class="h-4 w-4 text-red-600" />
+                  <div class="flex h-8 w-8 items-center justify-center rounded bg-red-50 text-lg">
+                    📅
                   </div>
                   <div class="flex-1">
                     <h4 class="font-semibold text-[var(--foreground)] text-sm">Training Session</h4>
@@ -340,12 +333,10 @@
                 </div>
                 <div class="flex items-center gap-3 text-xs text-[var(--muted-foreground)] mb-2">
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-users" class="h-3 w-3" />
-                    4 players
+                    👥 4 players
                   </span>
                   <span class="flex items-center gap-1">
-                    <Icon name="i-heroicons-clock" class="h-3 w-3" />
-                    90 min
+                    ⏱️ 90 min
                   </span>
                 </div>
                 <p class="text-xs text-[var(--muted-foreground)]">
