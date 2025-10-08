@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
-
+  
+const config = useRuntimeConfig()
 let isConnected = false
 
 export const connectToDatabase = async () => {
@@ -8,7 +9,7 @@ export const connectToDatabase = async () => {
     return
   }
 
-  const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/sjl-cerebro'
+  const mongoUri = config.mongoUri || ''
 
   try {
     await mongoose.connect(mongoUri)
